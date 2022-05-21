@@ -1,0 +1,53 @@
+body {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+header {
+  background-color: transparent;
+}
+
+kbd {
+  color: #fff !important;
+  background-color: #555;
+  border-radius: 3px;
+  box-shadow: inset 0-1px 0 rgba(0, 0, 0, .25);
+  padding-inline: 6px;
+  margin-inline: 2px;
+}
+
+.page {
+  height: 100vh;
+  display: flow-root;
+  overflow: hidden;
+  padding: 32px;
+  position: relative;
+}
+
+.page h1:first-child {
+  margin-top: 0;
+}
+
+#page-counter {
+  top: 0;
+  right: 0;
+  position: fixed;
+  line-height: 60px;
+  margin-right: 20px;
+  z-index: 1001;
+}
+
+.page-content {
+  max-width: calc(100vw);
+}
+
+body.loaded-header .page-content {
+  margin-top: 60px;
+}
+
+/* fancy transitions */
+* {
+  transition-property: color, background, max-width;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}

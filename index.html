@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="demo-overrides.css"></link>
+  <title>Design Handbook</title>
+</head>
+<body>
+  <div id="page-counter"></div>
+  <div class="page" data-import="base.css">
+    <div class="page-content card shadow">
+      <h1>Design Handbook</h1>
+      <p>
+        Hello there 👋
+        <br />
+        You're here because I want to showcase certain design standards that I think are modern and accessible.
+        <br />
+        I've tried to make the demo as interactive as possible.
+        <br />
+        Either use <kbd>&#129045;</kbd><kbd>&#129047;</kbd> arrows or your mouse scroll wheel to navigate between pages.
+      </p>
+    </div>
+  </div>
+  <div class="page" data-import="font.css">
+    <div class="page-content card shadow">
+      <h1>Fonts</h1>
+      <p>
+        Our font should be consistent across the website. Recommended fonts are "Source Sans Pro", "Open Sans", "Nunito", "Lato", "Roboto".
+        <br />
+        We'll use "Source Sans Pro".
+      </p>
+      <p>
+        We should also specify widely available fonts such as "Arial" or "sans-serif" as fallbacks in case of poor networks or unavailability of hosting service that offers the font.
+      </p>
+      <p>
+        To represent visual hierarchy in text, we should use different font sizes.
+        <br />
+        A good way to handle different font sizes is to set a global font size on body (16px) and use the unit <strong>em</strong> to choose a relative font size.
+      </p>
+    </div>
+  </div>
+  <div class="page" data-import="layout.css">
+    <div class="page-content card shadow">
+      <h1>Layout</h1>
+      <p>
+        Your page should be accessible on every screen size.
+      </p>
+      <p>
+        On small screens, occupy all of the width.
+      </p>
+      <p>
+        On larger screens, set a <strong>max-width</strong> on your content so that it doesn't flow freely into infinite width.
+        <br />
+        This makes it easier to test your UI by limiting the "states" your views can take.
+      </p>
+    </div>
+  </div>
+  <div class="page" data-import="header.css">
+    <header class="shadow">
+      <h3>📖 Design Handbook</h3>
+    </header>
+    <div class="page-content card shadow">
+      <h1>Header</h1>
+      <p>
+        Your header sets the tone for the rest of your page. The colour should provide a good contrast from the rest of your page.
+      </p>
+    </div>
+  </div>
+  <div class="page" data-import="cosmetics.css">
+    <div class="page-content card shadow">
+      <h1>Rounded corners and soft shadows</h1>
+      <p>
+        Apply soft shadows to components to indicate depth.
+      </p>
+    </div>
+  </div>
+  <div class="page" data-import="dark-mode.css">
+    <div class="page-content card shadow">
+      <h1>Dark mode</h1>
+      <p>
+        Be a good dev and add dark mode.
+      </p>
+    </div>
+  </div>
+  <div class="page" data-import=""></div>
+  <script src="main.js"></script>
+</body>
+</html>

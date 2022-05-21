@@ -1,0 +1,6 @@
+.page-content {
+  max-width: calc(0vw + 1366px);
+  margin-inline: auto;
+  background-color: #fff;
+  padding: 32px;
+}
